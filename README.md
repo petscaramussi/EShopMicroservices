@@ -1,5 +1,7 @@
 # EShopMicroservices
 
+`Obs: In Progress`
+
 Step by Step Development of this Repository ( Udemy Course ) -> https://www.udemy.com/course/microservices-architecture-and-implementation-on-dotnet
 
 See the overall picture of **implementations on microservices with .net tools** on real-world **e-commerce microservices** project;
