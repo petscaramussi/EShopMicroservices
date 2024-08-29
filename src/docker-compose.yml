@@ -7,11 +7,11 @@ services:
   basketdb:
     image: postgres
 
-  catalogapi:
+  catalog.api:
     image: ${DOCKER_REGISTRY-}catalogapi
     build:
       context: .
-      dockerfile: Services/Catalog/CatalogAPI/Dockerfile
+      dockerfile: Services/Catalog/Catalog.API/Dockerfile
 
 volumes:
   postgres_catalog:
