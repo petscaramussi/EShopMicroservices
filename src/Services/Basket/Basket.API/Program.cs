@@ -42,12 +42,13 @@ builder.Services.AddGrpcClient<DiscountProtoService.DiscountProtoServiceClient>(
     var handler = new HttpClientHandler
     {
         ServerCertificateCustomValidationCallback =
-            HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
+        HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
     };
 
     return handler;
 });
 
+//Cross-Cutting Services
 builder.Services.AddExceptionHandler<CustomExceptionHandler>();
 
 builder.Services.AddHealthChecks()

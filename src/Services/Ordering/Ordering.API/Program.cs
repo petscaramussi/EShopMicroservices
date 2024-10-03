@@ -4,14 +4,14 @@ using Ordering.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container
+// Add services to the container.
 builder.Services
-    .AddApplicationService()
+    .AddApplicationServices()
     .AddInfrastructureServices(builder.Configuration)
     .AddApiServices();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline
+// Configure the HTTP request pipeline.
 
 app.Run();
